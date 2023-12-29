@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "builds": [{ "src": "pages/**", "use": "@now/next" }],
+    "routes": [
+      { "src": "/uploads/(.*)", "dest": "/uploads/$1" },
+      { "src": "/db.txt", "dest": "/db.txt" },
+      { "src": "/(.*)", "dest": "/pages/$1" }
+    ]
+  }
+  
